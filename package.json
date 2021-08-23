@@ -1,0 +1,22 @@
+{
+  "name": "xianniu-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "highlight.js": "^11.2.0",
+    "markdown-it": "^12.2.0",
+    "markdown-it-footnote": "^3.0.3"
+  }
+}
