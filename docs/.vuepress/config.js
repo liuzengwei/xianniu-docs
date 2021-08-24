@@ -1,17 +1,49 @@
 module.exports = {
-    title: 'xianniu',  // 文档标题，左上角显示
+    lang: "zh-CN",
+    title: '贤牛',  // 文档标题，左上角显示
     description: '贤牛后台管理文档',
-    base: '/', // 这里写你的仓库名称
-    dest:'./dist',
+    base: '/xianniu-docs/', // 这里写你的仓库名称
     head: [
         ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/jyjwebdocs/favicon.ico` }]
     ], //这里配置你的网页头部信息等
+
     markdown: {
         lineNumbers: true,
         extendMarkdown: md => {
             // 使用更多的 markdown-it 插件!
             md.use(require('markdown-it'))
             md.use(require('markdown-it-footnote'))
+        }
+    },
+    // plugins: ['demo-container'],
+    plugins: [
+    ],
+    // plugins: {
+    //     'demo-container': {
+    //         component: 'CustomDemoBlock',
+    //         locales: [
+    //             {
+    //                 "lang": "zh-CN",
+    //                 "custom-demo-block": {
+    //                     "hide-text": "隐藏代码",
+    //                     "show-text": "显示代码",
+    //                     "copy-text": "复制代码",
+    //                     "copy-success": "复制成功"
+    //                 }
+    //             },
+    //         ]
+    //     }
+    // },
+    chainWebpack: (config, isServer) => {
+        if (!isServer) {
+            config.module
+                .rule('scss')
+                .test(/\.scss$/)
+                .oneOf('normal')
+                .use('sass')
+                .loader('sass-loader')
+                .end()
+                .end()
         }
     },
     themeConfig: {
@@ -27,6 +59,10 @@ module.exports = {
                 title: '介绍',
                 path: '/',
 
+            },
+            {
+                title: '脚手架',
+                path: '/cli/',
             },
             {
                 title: '组件',
