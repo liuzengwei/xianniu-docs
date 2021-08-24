@@ -1,7 +1,7 @@
 module.exports = {
     title: 'xianniu',  // 文档标题，左上角显示
     description: '贤牛后台管理文档',
-    base: './', // 这里写你的仓库名称
+    base: '/', // 这里写你的仓库名称
     dest:'./dist',
     head: [
         ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/jyjwebdocs/favicon.ico` }]
