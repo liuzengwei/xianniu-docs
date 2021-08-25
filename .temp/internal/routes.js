@@ -21,18 +21,6 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-1e6715ae",
-    path: "/cli/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1e6715ae").then(next)
-    },
-  },
-  {
-    path: "/cli/index.html",
-    redirect: "/cli/"
-  },
-  {
     name: "v-2b7e91e1",
     path: "/comps/",
     component: GlobalLayout,
@@ -51,6 +39,26 @@ export const routes = [
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-b145cd60").then(next)
     },
+  },
+  {
+    name: "v-0ead3faa",
+    path: "/comps/date.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0ead3faa").then(next)
+    },
+  },
+  {
+    name: "v-1e6715ae",
+    path: "/cli/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1e6715ae").then(next)
+    },
+  },
+  {
+    path: "/cli/index.html",
+    redirect: "/cli/"
   },
   {
     path: '*',

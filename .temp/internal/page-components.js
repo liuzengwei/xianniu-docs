@@ -3,7 +3,8 @@
  */
 export default {
   "v-716ce9de": () => import("C:\\lzw\\Study\\xianniu-docs\\docs\\README.md"),
-  "v-1e6715ae": () => import("C:\\lzw\\Study\\xianniu-docs\\docs\\cli\\README.md"),
   "v-2b7e91e1": () => import("C:\\lzw\\Study\\xianniu-docs\\docs\\comps\\README.md"),
-  "v-b145cd60": () => import("C:\\lzw\\Study\\xianniu-docs\\docs\\comps\\table.md") 
+  "v-b145cd60": () => import("C:\\lzw\\Study\\xianniu-docs\\docs\\comps\\table.md"),
+  "v-0ead3faa": () => import("C:\\lzw\\Study\\xianniu-docs\\docs\\comps\\date.md"),
+  "v-1e6715ae": () => import("C:\\lzw\\Study\\xianniu-docs\\docs\\cli\\README.md") 
 }

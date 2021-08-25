@@ -8,7 +8,7 @@ module.exports = {
     ], //这里配置你的网页头部信息等
 
     markdown: {
-        lineNumbers: true,
+        lineNumbers: false,
         extendMarkdown: md => {
             // 使用更多的 markdown-it 插件!
             md.use(require('markdown-it'))
@@ -70,7 +70,8 @@ module.exports = {
                 collapsable: false,
                 sidebarDepth: 1,
                 children: [
-                    { title: 'xn-table', path: '/comps/table' }
+                    { title: 'xn-table', path: '/comps/table' },
+                    { title: 'xn-date', path: '/comps/date' },
                 ]
             },
 
