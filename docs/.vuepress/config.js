@@ -65,6 +65,10 @@ module.exports = {
                 path: '/cli/',
             },
             {
+                title: '主题',
+                path: '/theme/',
+            },
+            {
                 title: '组件',
                 path: '/comps/',
                 collapsable: false,
@@ -74,6 +78,19 @@ module.exports = {
                     { title: 'xn-date', path: '/comps/date' },
                     { title: 'xn-search', path: '/comps/search' },
                     { title: 'xn-dialog', path: '/comps/dialog' },
+                ]
+            },
+            {
+                title: '请求',
+                path: '/request/',
+            },
+            {
+                title: '工具类',
+                path: '/tools/',
+                collapsable: false,
+                sidebarDepth: 1,
+                children: [
+                    // { title: 'xn-tools', path: '/tools/tools' },
                 ]
             },
 

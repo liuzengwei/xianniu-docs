@@ -38,8 +38,10 @@
 #### 属性
 
 <api :list="list"></api>
+ 
+ #### 事件
 
-<script>
+ <script>
    export default {
         data(){
             return {
@@ -50,11 +52,9 @@
                     {query:'max-height',desc:'最大高度（如果开启v-auth-height，自动计算）',type:'number',options:'-',default:'0'},
                     {query:'show-page',desc:'是否显示分页',type:'boolean',options:"true,false",default:'true'},
                     {query:'index',desc:'是否显示行号',type:'boolean',options:"true,false",default:'true'},
-                    {query:'selection',desc:'是否显示选择框',type:'boolean',options:"true,false",default:'false'},
+                    {query:'selection',desc:'是否显示选择框',type:'boolean',options:"true,false",default:'false'}
                 ]
             }
         }
     }
 </script>
- 
- #### 事件
