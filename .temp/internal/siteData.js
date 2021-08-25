@@ -17,12 +17,28 @@ export const siteData = {
   ],
   "pages": [
     {
+      "title": "后台管理脚手架",
+      "frontmatter": {},
+      "regularPath": "/cli/",
+      "relativePath": "cli/README.md",
+      "key": "v-1e6715ae",
+      "path": "/cli/"
+    },
+    {
       "title": "介绍",
       "frontmatter": {},
       "regularPath": "/",
       "relativePath": "README.md",
       "key": "v-716ce9de",
       "path": "/"
+    },
+    {
+      "title": "xn-search",
+      "frontmatter": {},
+      "regularPath": "/comps/search.html",
+      "relativePath": "comps/search.md",
+      "key": "v-6ba45814",
+      "path": "/comps/search.html"
     },
     {
       "title": "组件",
@@ -33,26 +49,6 @@ export const siteData = {
       "path": "/comps/"
     },
     {
-      "title": "xn-table",
-      "frontmatter": {},
-      "regularPath": "/comps/table.html",
-      "relativePath": "comps/table.md",
-      "key": "v-b145cd60",
-      "path": "/comps/table.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "属性",
-          "slug": "属性"
-        },
-        {
-          "level": 3,
-          "title": "事件",
-          "slug": "事件"
-        }
-      ]
-    },
-    {
       "title": "xn-date",
       "frontmatter": {},
       "regularPath": "/comps/date.html",
@@ -61,12 +57,12 @@ export const siteData = {
       "path": "/comps/date.html"
     },
     {
-      "title": "后台管理脚手架",
+      "title": "xn-table",
       "frontmatter": {},
-      "regularPath": "/cli/",
-      "relativePath": "cli/README.md",
-      "key": "v-1e6715ae",
-      "path": "/cli/"
+      "regularPath": "/comps/table.html",
+      "relativePath": "comps/table.md",
+      "key": "v-b145cd60",
+      "path": "/comps/table.html"
     }
   ],
   "themeConfig": {
@@ -93,6 +89,10 @@ export const siteData = {
           {
             "title": "xn-date",
             "path": "/comps/date"
+          },
+          {
+            "title": "xn-search",
+            "path": "/comps/search"
           }
         ]
       }

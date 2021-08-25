@@ -72,6 +72,7 @@ module.exports = {
                 children: [
                     { title: 'xn-table', path: '/comps/table' },
                     { title: 'xn-date', path: '/comps/date' },
+                    { title: 'xn-search', path: '/comps/search' },
                 ]
             },
 
