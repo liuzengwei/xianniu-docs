@@ -17,36 +17,12 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "后台管理脚手架",
-      "frontmatter": {},
-      "regularPath": "/cli/",
-      "relativePath": "cli/README.md",
-      "key": "v-1e6715ae",
-      "path": "/cli/"
-    },
-    {
       "title": "介绍",
       "frontmatter": {},
       "regularPath": "/",
       "relativePath": "README.md",
       "key": "v-716ce9de",
       "path": "/"
-    },
-    {
-      "title": "xn-search",
-      "frontmatter": {},
-      "regularPath": "/comps/search.html",
-      "relativePath": "comps/search.md",
-      "key": "v-6ba45814",
-      "path": "/comps/search.html"
-    },
-    {
-      "title": "组件",
-      "frontmatter": {},
-      "regularPath": "/comps/",
-      "relativePath": "comps/README.md",
-      "key": "v-2b7e91e1",
-      "path": "/comps/"
     },
     {
       "title": "xn-date",
@@ -57,12 +33,44 @@ export const siteData = {
       "path": "/comps/date.html"
     },
     {
+      "title": "组件",
+      "frontmatter": {},
+      "regularPath": "/comps/",
+      "relativePath": "comps/README.md",
+      "key": "v-2b7e91e1",
+      "path": "/comps/"
+    },
+    {
+      "title": "xn-dialog",
+      "frontmatter": {},
+      "regularPath": "/comps/dialog.html",
+      "relativePath": "comps/dialog.md",
+      "key": "v-b9b52694",
+      "path": "/comps/dialog.html"
+    },
+    {
+      "title": "后台管理脚手架",
+      "frontmatter": {},
+      "regularPath": "/cli/",
+      "relativePath": "cli/README.md",
+      "key": "v-1e6715ae",
+      "path": "/cli/"
+    },
+    {
       "title": "xn-table",
       "frontmatter": {},
       "regularPath": "/comps/table.html",
       "relativePath": "comps/table.md",
       "key": "v-b145cd60",
       "path": "/comps/table.html"
+    },
+    {
+      "title": "xn-search",
+      "frontmatter": {},
+      "regularPath": "/comps/search.html",
+      "relativePath": "comps/search.md",
+      "key": "v-6ba45814",
+      "path": "/comps/search.html"
     }
   ],
   "themeConfig": {
@@ -93,6 +101,10 @@ export const siteData = {
           {
             "title": "xn-search",
             "path": "/comps/search"
+          },
+          {
+            "title": "xn-dialog",
+            "path": "/comps/dialog"
           }
         ]
       }

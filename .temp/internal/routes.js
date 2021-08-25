@@ -9,18 +9,6 @@ import GlobalLayout from "C:\\lzw\\Study\\xianniu-docs\\node_modules\\@vuepress\
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-1e6715ae",
-    path: "/cli/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1e6715ae").then(next)
-    },
-  },
-  {
-    path: "/cli/index.html",
-    redirect: "/cli/"
-  },
-  {
     name: "v-716ce9de",
     path: "/",
     component: GlobalLayout,
@@ -33,11 +21,11 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-6ba45814",
-    path: "/comps/search.html",
+    name: "v-0ead3faa",
+    path: "/comps/date.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6ba45814").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-0ead3faa").then(next)
     },
   },
   {
@@ -53,12 +41,24 @@ export const routes = [
     redirect: "/comps/"
   },
   {
-    name: "v-0ead3faa",
-    path: "/comps/date.html",
+    name: "v-b9b52694",
+    path: "/comps/dialog.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0ead3faa").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-b9b52694").then(next)
     },
+  },
+  {
+    name: "v-1e6715ae",
+    path: "/cli/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1e6715ae").then(next)
+    },
+  },
+  {
+    path: "/cli/index.html",
+    redirect: "/cli/"
   },
   {
     name: "v-b145cd60",
@@ -66,6 +66,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-b145cd60").then(next)
+    },
+  },
+  {
+    name: "v-6ba45814",
+    path: "/comps/search.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6ba45814").then(next)
     },
   },
   {
