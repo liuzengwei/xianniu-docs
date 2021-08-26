@@ -27,7 +27,8 @@ this.$storage.session.get(key)
 #### 工具库[(lodash)](https://www.lodashjs.com/)
 
 ``` js
-this.$lodash.xx()
+this.$lodash().forEach(item=>item)
+this.$lodash.add(4,6) // 10
 ```
 
 #### 一些正则验证 
@@ -35,15 +36,23 @@ this.$lodash.xx()
 
 
 ``` js
-this.$reg.xxx // return false/true
-
 checkPhone: /^1(3|4|5|6|7|8|9)\d{9}$/, // 校验手机号
 checkPwd: /^[0-9A-Za-z]{8,20}$/, // 8-20位的字母和数字
 checkNumber: /^[+-]?(0|([1-9]\d*))(?:\.\d{1,2})?$/g // 校验数字类型
-
 ```
 
-#### 对金额的格式化
+``` js
+示例：
+[
+    {
+        required:true,
+        message:'xxx',
+        pattern: this.$reg.checkNumber // 此处校验正则
+    }
+]
+```
+
+#### 金额格式化操作
 
 ``` js
 this.$format.toText('100') // ￥100.00
