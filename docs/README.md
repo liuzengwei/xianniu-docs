@@ -7,3 +7,12 @@
 
 [^1]:大家好，我来敲代码了，ctrl+c再ctrl+v
 
+#### 当前最新版
+---
+`xianniu-tools 1.0.4` 
+
+`xianniu-elementui-theme 1.0.2` 
+
+`xianniu-request 1.0.11` 
+
+`xianniu-components 1.0.3` 

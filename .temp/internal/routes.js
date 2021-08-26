@@ -9,16 +9,16 @@ import GlobalLayout from "C:\\lzw\\Study\\xianniu-docs\\node_modules\\@vuepress\
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-716ce9de",
-    path: "/",
+    name: "v-1e6715ae",
+    path: "/cli/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-716ce9de").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-1e6715ae").then(next)
     },
   },
   {
-    path: "/index.html",
-    redirect: "/"
+    path: "/cli/index.html",
+    redirect: "/cli/"
   },
   {
     name: "v-2b7e91e1",
@@ -33,12 +33,24 @@ export const routes = [
     redirect: "/comps/"
   },
   {
-    name: "v-b9b52694",
-    path: "/comps/dialog.html",
+    name: "v-0ead3faa",
+    path: "/comps/date.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b9b52694").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-0ead3faa").then(next)
     },
+  },
+  {
+    name: "v-716ce9de",
+    path: "/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-716ce9de").then(next)
+    },
+  },
+  {
+    path: "/index.html",
+    redirect: "/"
   },
   {
     name: "v-6ba45814",
@@ -49,16 +61,20 @@ export const routes = [
     },
   },
   {
-    name: "v-08cb68e1",
-    path: "/log/",
+    name: "v-b145cd60",
+    path: "/comps/table.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-08cb68e1").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-b145cd60").then(next)
     },
   },
   {
-    path: "/log/index.html",
-    redirect: "/log/"
+    name: "v-b9b52694",
+    path: "/comps/dialog.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-b9b52694").then(next)
+    },
   },
   {
     name: "v-398733cb",
@@ -73,43 +89,11 @@ export const routes = [
     redirect: "/request/"
   },
   {
-    name: "v-78c51817",
-    path: "/theme/",
+    name: "v-55967dd0",
+    path: "/tools/tools.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-78c51817").then(next)
-    },
-  },
-  {
-    path: "/theme/index.html",
-    redirect: "/theme/"
-  },
-  {
-    name: "v-0ead3faa",
-    path: "/comps/date.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0ead3faa").then(next)
-    },
-  },
-  {
-    name: "v-1e6715ae",
-    path: "/cli/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1e6715ae").then(next)
-    },
-  },
-  {
-    path: "/cli/index.html",
-    redirect: "/cli/"
-  },
-  {
-    name: "v-b145cd60",
-    path: "/comps/table.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b145cd60").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-55967dd0").then(next)
     },
   },
   {
@@ -125,12 +109,28 @@ export const routes = [
     redirect: "/tools/"
   },
   {
-    name: "v-55967dd0",
-    path: "/tools/tools.html",
+    name: "v-78c51817",
+    path: "/theme/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-55967dd0").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-78c51817").then(next)
     },
+  },
+  {
+    path: "/theme/index.html",
+    redirect: "/theme/"
+  },
+  {
+    name: "v-08cb68e1",
+    path: "/log/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-08cb68e1").then(next)
+    },
+  },
+  {
+    path: "/log/index.html",
+    redirect: "/log/"
   },
   {
     path: '*',
