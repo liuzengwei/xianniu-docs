@@ -25,6 +25,14 @@ export const siteData = {
       "path": "/"
     },
     {
+      "title": "组件",
+      "frontmatter": {},
+      "regularPath": "/comps/",
+      "relativePath": "comps/README.md",
+      "key": "v-2b7e91e1",
+      "path": "/comps/"
+    },
+    {
       "title": "后台管理脚手架",
       "frontmatter": {},
       "regularPath": "/cli/",
@@ -41,12 +49,12 @@ export const siteData = {
       "path": "/comps/dialog.html"
     },
     {
-      "title": "xn-date",
+      "title": "xn-table",
       "frontmatter": {},
-      "regularPath": "/comps/date.html",
-      "relativePath": "comps/date.md",
-      "key": "v-0ead3faa",
-      "path": "/comps/date.html"
+      "regularPath": "/comps/table.html",
+      "relativePath": "comps/table.md",
+      "key": "v-b145cd60",
+      "path": "/comps/table.html"
     },
     {
       "title": "xn-search",
@@ -57,36 +65,12 @@ export const siteData = {
       "path": "/comps/search.html"
     },
     {
-      "title": "组件",
+      "title": "xn-date",
       "frontmatter": {},
-      "regularPath": "/comps/",
-      "relativePath": "comps/README.md",
-      "key": "v-2b7e91e1",
-      "path": "/comps/"
-    },
-    {
-      "title": "xn-table",
-      "frontmatter": {},
-      "regularPath": "/comps/table.html",
-      "relativePath": "comps/table.md",
-      "key": "v-b145cd60",
-      "path": "/comps/table.html"
-    },
-    {
-      "title": "主题",
-      "frontmatter": {},
-      "regularPath": "/theme/",
-      "relativePath": "theme/README.md",
-      "key": "v-78c51817",
-      "path": "/theme/"
-    },
-    {
-      "title": "一些常用的工具or方法",
-      "frontmatter": {},
-      "regularPath": "/tools/",
-      "relativePath": "tools/README.md",
-      "key": "v-60054f1a",
-      "path": "/tools/"
+      "regularPath": "/comps/date.html",
+      "relativePath": "comps/date.md",
+      "key": "v-0ead3faa",
+      "path": "/comps/date.html"
     },
     {
       "title": "公共请求",
@@ -97,12 +81,35 @@ export const siteData = {
       "path": "/request/"
     },
     {
+      "title": "主题",
+      "frontmatter": {},
+      "regularPath": "/theme/",
+      "relativePath": "theme/README.md",
+      "key": "v-78c51817",
+      "path": "/theme/"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/log/",
+      "relativePath": "log/README.md",
+      "key": "v-08cb68e1",
+      "path": "/log/"
+    },
+    {
       "title": "tools",
       "frontmatter": {},
       "regularPath": "/tools/tools.html",
       "relativePath": "tools/tools.md",
       "key": "v-55967dd0",
       "path": "/tools/tools.html"
+    },
+    {
+      "title": "一些常用的工具or方法",
+      "frontmatter": {},
+      "regularPath": "/tools/",
+      "relativePath": "tools/README.md",
+      "key": "v-60054f1a",
+      "path": "/tools/"
     }
   ],
   "themeConfig": {
@@ -111,6 +118,10 @@ export const siteData = {
       {
         "title": "介绍",
         "path": "/"
+      },
+      {
+        "title": "更新日志",
+        "path": "/log/"
       },
       {
         "title": "脚手架",

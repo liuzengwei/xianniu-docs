@@ -50,9 +50,10 @@
                     {query:'columns',desc:'表头',type:'array',options:'-',default:'-'},
                     {query:'v-auth-height',desc:'自适应高度',type:'number',options:'-',default:'95'},
                     {query:'max-height',desc:'最大高度（如果开启v-auth-height，自动计算）',type:'number',options:'-',default:'0'},
-                    {query:'show-page',desc:'是否显示分页',type:'boolean',options:"true,false",default:'true'},
-                    {query:'index',desc:'是否显示行号',type:'boolean',options:"true,false",default:'true'},
-                    {query:'selection',desc:'是否显示选择框',type:'boolean',options:"true,false",default:'false'}
+                    {query:'show-page',desc:'是否显示分页',type:'boolean',options:"true/false/auth（大于pageSize时，自动显示分页）",default:'true'},
+                    {query:'index',desc:'是否显示行号',type:'boolean',options:"true/false",default:'true'},
+                    {query:'selection',desc:'是否显示选择框',type:'boolean',options:"true/false",default:'false'},
+                    {query:'getList',desc:'分页请求',type:'function',options:"-",default:'-'}
                 ]
             }
         }

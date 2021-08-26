@@ -61,6 +61,11 @@ module.exports = {
 
             },
             {
+                title: '更新日志',
+                path: '/log/',
+
+            },
+            {
                 title: '脚手架',
                 path: '/cli/',
             },
