@@ -33,28 +33,12 @@ export const siteData = {
       "path": "/comps/"
     },
     {
-      "title": "后台管理脚手架",
-      "frontmatter": {},
-      "regularPath": "/cli/",
-      "relativePath": "cli/README.md",
-      "key": "v-1e6715ae",
-      "path": "/cli/"
-    },
-    {
       "title": "xn-dialog",
       "frontmatter": {},
       "regularPath": "/comps/dialog.html",
       "relativePath": "comps/dialog.md",
       "key": "v-b9b52694",
       "path": "/comps/dialog.html"
-    },
-    {
-      "title": "xn-table",
-      "frontmatter": {},
-      "regularPath": "/comps/table.html",
-      "relativePath": "comps/table.md",
-      "key": "v-b145cd60",
-      "path": "/comps/table.html"
     },
     {
       "title": "xn-search",
@@ -65,12 +49,12 @@ export const siteData = {
       "path": "/comps/search.html"
     },
     {
-      "title": "xn-date",
+      "title": "更新日志",
       "frontmatter": {},
-      "regularPath": "/comps/date.html",
-      "relativePath": "comps/date.md",
-      "key": "v-0ead3faa",
-      "path": "/comps/date.html"
+      "regularPath": "/log/",
+      "relativePath": "log/README.md",
+      "key": "v-08cb68e1",
+      "path": "/log/"
     },
     {
       "title": "公共请求",
@@ -89,19 +73,28 @@ export const siteData = {
       "path": "/theme/"
     },
     {
+      "title": "xn-date",
       "frontmatter": {},
-      "regularPath": "/log/",
-      "relativePath": "log/README.md",
-      "key": "v-08cb68e1",
-      "path": "/log/"
+      "regularPath": "/comps/date.html",
+      "relativePath": "comps/date.md",
+      "key": "v-0ead3faa",
+      "path": "/comps/date.html"
     },
     {
-      "title": "tools",
+      "title": "后台管理脚手架",
       "frontmatter": {},
-      "regularPath": "/tools/tools.html",
-      "relativePath": "tools/tools.md",
-      "key": "v-55967dd0",
-      "path": "/tools/tools.html"
+      "regularPath": "/cli/",
+      "relativePath": "cli/README.md",
+      "key": "v-1e6715ae",
+      "path": "/cli/"
+    },
+    {
+      "title": "xn-table",
+      "frontmatter": {},
+      "regularPath": "/comps/table.html",
+      "relativePath": "comps/table.md",
+      "key": "v-b145cd60",
+      "path": "/comps/table.html"
     },
     {
       "title": "一些常用的工具or方法",
@@ -110,6 +103,14 @@ export const siteData = {
       "relativePath": "tools/README.md",
       "key": "v-60054f1a",
       "path": "/tools/"
+    },
+    {
+      "title": "tools",
+      "frontmatter": {},
+      "regularPath": "/tools/tools.html",
+      "relativePath": "tools/tools.md",
+      "key": "v-55967dd0",
+      "path": "/tools/tools.html"
     }
   ],
   "themeConfig": {
