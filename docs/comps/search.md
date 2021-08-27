@@ -68,6 +68,10 @@
 
 <api :list="formData"></api>
 
+#### options
+---
+
+<api :list="options"></api>
 
 #### 事件
 ---
@@ -88,7 +92,14 @@
                     {query:'type',desc:'表单类型',type:'string',options:'input/select/date',default:'-'},
                     {query:'prop',desc:'表单域 model 字段，在使用 validate、resetFields 方法的情况下，该属性是必填的',type:'string',options:'传入 Form 组件的 model 中的字段',default:'-'},
                     {query:'data',desc:'表单的数据源（例：select的下拉数据）',type:'array',options:'-',default:'-'},
-                    {query:'options',desc:'一些表单配置（例：选择日期，接口需要的字段{start:需要的字段,end:需要的字段}）',type:'object',options:'-',default:'-'},
+                    {query:'options',desc:'详情见下放options',type:'object',options:'-',default:'{}'},
+                    
+                ],
+                options:[
+                    {query:'start/end',desc:'查询条件需要传的字段',type:'string',options:'',default:'-'},
+                    {query:'is-shortcut',desc:'是否显示日期快捷栏（只有在type=xx range时生效）',type:'boolbarn',options:'true/false',default:'true'},
+                    {query:'start-placeholder',desc:'当type为组合选择时候的文字占位（左侧）',type:'string',options:'-',default:'-'},
+                    {query:'end-placeholder',desc:'当type为组合选择时候的文字占位（右侧）',type:'string',options:'-',default:'-'},
                 ],
                 event:[
                     {query:'on-search',desc:'触发搜索',type:'function',options:'-',default:'-'},

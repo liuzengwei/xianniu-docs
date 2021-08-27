@@ -17,20 +17,12 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "后台管理脚手架",
+      "title": "介绍",
       "frontmatter": {},
-      "regularPath": "/cli/",
-      "relativePath": "cli/README.md",
-      "key": "v-1e6715ae",
-      "path": "/cli/"
-    },
-    {
-      "title": "组件",
-      "frontmatter": {},
-      "regularPath": "/comps/",
-      "relativePath": "comps/README.md",
-      "key": "v-2b7e91e1",
-      "path": "/comps/"
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-716ce9de",
+      "path": "/"
     },
     {
       "title": "xn-date",
@@ -41,20 +33,44 @@ export const siteData = {
       "path": "/comps/date.html"
     },
     {
-      "title": "介绍",
-      "frontmatter": {},
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-716ce9de",
-      "path": "/"
-    },
-    {
       "title": "xn-search",
       "frontmatter": {},
       "regularPath": "/comps/search.html",
       "relativePath": "comps/search.md",
       "key": "v-6ba45814",
       "path": "/comps/search.html"
+    },
+    {
+      "title": "组件",
+      "frontmatter": {},
+      "regularPath": "/comps/",
+      "relativePath": "comps/README.md",
+      "key": "v-2b7e91e1",
+      "path": "/comps/"
+    },
+    {
+      "title": "后台管理脚手架",
+      "frontmatter": {},
+      "regularPath": "/cli/",
+      "relativePath": "cli/README.md",
+      "key": "v-1e6715ae",
+      "path": "/cli/"
+    },
+    {
+      "title": "更新日志",
+      "frontmatter": {},
+      "regularPath": "/log/",
+      "relativePath": "log/README.md",
+      "key": "v-08cb68e1",
+      "path": "/log/"
+    },
+    {
+      "title": "主题",
+      "frontmatter": {},
+      "regularPath": "/theme/",
+      "relativePath": "theme/README.md",
+      "key": "v-78c51817",
+      "path": "/theme/"
     },
     {
       "title": "xn-table",
@@ -73,6 +89,14 @@ export const siteData = {
       "path": "/comps/dialog.html"
     },
     {
+      "title": "一些常用的工具or方法",
+      "frontmatter": {},
+      "regularPath": "/tools/",
+      "relativePath": "tools/README.md",
+      "key": "v-60054f1a",
+      "path": "/tools/"
+    },
+    {
       "title": "公共请求",
       "frontmatter": {},
       "regularPath": "/request/",
@@ -87,30 +111,6 @@ export const siteData = {
       "relativePath": "tools/tools.md",
       "key": "v-55967dd0",
       "path": "/tools/tools.html"
-    },
-    {
-      "title": "一些常用的工具or方法",
-      "frontmatter": {},
-      "regularPath": "/tools/",
-      "relativePath": "tools/README.md",
-      "key": "v-60054f1a",
-      "path": "/tools/"
-    },
-    {
-      "title": "主题",
-      "frontmatter": {},
-      "regularPath": "/theme/",
-      "relativePath": "theme/README.md",
-      "key": "v-78c51817",
-      "path": "/theme/"
-    },
-    {
-      "title": "更新日志",
-      "frontmatter": {},
-      "regularPath": "/log/",
-      "relativePath": "log/README.md",
-      "key": "v-08cb68e1",
-      "path": "/log/"
     }
   ],
   "themeConfig": {

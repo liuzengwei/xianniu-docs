@@ -50,7 +50,9 @@
                     {query:'dsiabled',desc:'是否禁用',type:'boolean',options:'true/false',default:'true'},
                     {query:'readonly',desc:'是否只读',type:'boolean',options:'true/false',default:'true'},
                     {query:'type',desc:'显示类型',type:'string',options:'year/month/date/week/datetime/datetimerange/daterange',default:'daterange'},
-                    
+                    {query:'placeholder',desc:'文本占位',type:'string',options:'-',default:'-'},
+                    {query:'start-placeholder',desc:'range类型的文本占位',type:'string',options:'-',default:'开始日期'},
+                    {query:'end-placeholder',desc:'range类型的文本占位',type:'string',options:'-',default:'结束日期'},
                 ],
                 list1:[
                     {query:'on-change',desc:'选择日期',type:'function',options:'-',default:'-'},
