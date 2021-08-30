@@ -5,7 +5,7 @@
 
 ``` html javascript
 <template>
-    <xn-table :data="list" selection :columns="headerColumns">
+    <xn-table :data="list" index selection :columns="headerColumns" @handle-buttons="onMore">
         ...
     </xn-table>
 </template>
@@ -17,16 +17,16 @@
                     { prop: 'id', label: '字段1' },
                     { label: '操作', fixed: 'right', width: '150px,', more: {
                         options: [
-                            { label: '按钮1', methods: 'handleClick1', icon: 'el-icon-delete' },
-                            { label: '按钮1', methods: 'handleClick1', icon: 'el-icon-delete' }
+                            { label: '按钮1', method: 'handleClick1', icon: 'el-icon-delete' },
+                            { label: '按钮1', method: 'handleClick1', icon: 'el-icon-delete' }
                         ]
                     }}
                 ],
             }
         },
         methods:{
-            handleBtn(row) {
-                console.log(row) //handleClick1
+            onMore({method,row,idx}) {
+                
             },
         }
     }
@@ -41,6 +41,8 @@
  
  #### 事件
 
+<api :list="list1"></api>
+
  <script>
    export default {
         data(){
@@ -54,6 +56,15 @@
                     {query:'index',desc:'是否显示行号',type:'boolean',options:"true/false",default:'true'},
                     {query:'selection',desc:'是否显示选择框',type:'boolean',options:"true/false",default:'false'},
                     {query:'getList',desc:'分页请求',type:'function',options:"-",default:'-'}
+                ],
+                list1:[
+                    {query:'handle-buttons',desc:`
+                        触发按钮事件
+                        返回参数是个对象,
+                        {method,row,idx}
+                        触发的方法,当前列的数据,当前行的索引
+                    `,type:'function',options:``,default:'-'},
+                    {query:'on-selection',desc:'触发勾选事件',type:'function',options:'-',default:'-'},
                 ]
             }
         }
