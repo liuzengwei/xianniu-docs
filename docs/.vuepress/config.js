@@ -83,6 +83,7 @@ module.exports = {
                     { title: 'xn-date', path: '/comps/date' },
                     { title: 'xn-search', path: '/comps/search' },
                     { title: 'xn-dialog', path: '/comps/dialog' },
+                    { title: 'xn-description', path: '/comps/desc' },
                 ]
             },
             {
