@@ -75,6 +75,10 @@ module.exports = {
                 path: '/theme/',
             },
             {
+                title:'Render',
+                path:'/render/'
+            },
+            {
                 title: '组件',
                 path: '/comps/',
                 collapsable: false,
