@@ -56,15 +56,16 @@ module.exports = {
         // 设置侧边栏内容
         sidebar: [
             {
-                title: '介绍',
-                path: '/',
-
-            },
-            {
                 title: '更新日志',
                 path: '/log/',
 
             },
+            {
+                title: '介绍',
+                path: '/',
+
+            },
+
             {
                 title: '脚手架',
                 path: '/cli/',
@@ -84,6 +85,7 @@ module.exports = {
                     { title: 'xn-search', path: '/comps/search' },
                     { title: 'xn-dialog', path: '/comps/dialog' },
                     { title: 'xn-description', path: '/comps/desc' },
+                    { title: 'xn-upload', path: '/comps/upload' },
                 ]
             },
             {
