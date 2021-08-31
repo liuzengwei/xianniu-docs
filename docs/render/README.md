@@ -20,7 +20,7 @@ render: (h, {row})=>{
 }
 ```
 
-以下是上方的`props`处
+以下是上方的`props`
 
 ``` js
 {
