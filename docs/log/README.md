@@ -4,6 +4,7 @@
 
 **新特性**
 - 组件 `xn-table` 新增 `row-key` 属性 [详情](/comps/table)
+- 组件 `xn-table` 新增 `page` 属性 [详情](/comps/table)
 
 ### 2021年8月31日
 
