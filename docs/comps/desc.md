@@ -1,4 +1,4 @@
-# xn-date
+# xn-description
 详情页面展示详情描述时候的组件！
 
 ``` html javascript
