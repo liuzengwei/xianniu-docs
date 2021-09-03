@@ -10,9 +10,13 @@
         index
         selection
         :columns="headerColumns"
+        :auto-height="false"
         @handle-buttons="onMore"
+        @on-selection="onSelection"
         :page="pageQuery"
     >
+        <!-- 预留插槽 -->
+        <template #tools></template>
         ...
     </xn-table>
 </template>
@@ -21,13 +25,71 @@
         data(){
             return {
                 headerColumns: [
-                    { prop: 'id', label: '字段1' },
-                    { label: '操作', fixed: 'right', width: '150px,', more: {
-                        options: [
-                            { label: '按钮1', method: 'handleClick1', icon: 'el-icon-delete' },
-                            { label: '按钮1', method: 'handleClick1', icon: 'el-icon-delete' }
-                        ]
-                    }}
+                    { 
+                        prop: 'id', 
+                        label: '字段1', 
+                        show:false // 显示隐藏列 or show:()=>false
+                    },
+                    { 
+                        label: '操作', 
+                        fixed: 'right', 
+                        width: '150px,', 
+                        more: {
+                            options: [
+                                {
+                                    label: '按钮1',
+                                    method: 'handleClick1',
+                                    icon: 'el-icon-delete',
+                                    show:(row)=>{
+                                        return true // false or xxx
+                                    }
+                                },
+                                { 
+                                    // label: '按钮1', 
+                                    // method: 'handleClick1', 
+                                    // icon: 'el-icon-delete',
+                                    render: (h, {row}) => {
+                                        return h('el-button',
+                                                {  
+                                                    class: ['class-1','class-2'], // or { 'class-1': true,'class-2': false }
+                                                    style: {
+                                                        color: 'red',
+                                                        fontSize: '14px'
+                                                    },
+                                                    // 此处是组件的属性
+                                                    props: {
+                                                        type: 'danger',
+                                                        disabled: false,
+                                                    },
+                                                    // 组件自定义事件
+                                                    on: {
+                                                        click: this.clickHandler(row),
+                                                        change: this.clickHandler(row)
+                                                    },
+                                                    // js 原生事件
+                                                    nativeOn: {
+                                                        click: this.nativeClickHandler(row)
+                                                    },
+                                                    // 自定义指令
+                                                    directives: [
+                                                        {
+                                                            name: 'my-custom-directive',
+                                                            value: '2',
+                                                            expression: '1 + 1',
+                                                            arg: 'foo',
+                                                            modifiers: {
+                                                                bar: true
+                                                            }
+                                                        }
+                                                    ],
+                                                },
+                                                '按钮'
+                                        )
+                                    }
+                                }
+                            ]
+                        }
+                    }
                 ],
             }
         },
