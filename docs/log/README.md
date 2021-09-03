@@ -5,6 +5,7 @@
 **新特性**
 - 组件 `xn-table` 新增 `show` 属性，控制每列的显示隐藏 [详情](/comps/table)
 - 组件 `xn-table` 预留 `tools` 插槽，方便后续扩展功能 [详情](/comps/table)
+- 组件 `xn-drawer` 新增底部按钮位置 `align`  [详情](/comps/drawer)
 
 ### 2021年9月1日
 
