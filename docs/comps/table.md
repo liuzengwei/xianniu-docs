@@ -127,6 +127,7 @@
                     {query:'getList',desc:'分页请求',type:'function',options:"-",default:'-'},
                     {query:'row-key',desc:'行数据的 Key，用来优化 Table 的渲染；在使用 reserve-selection 功能与显示树形数据时，该属性是必填的。类型为 String 时，支持多层访问：user.info.id，但不支持 user.info[0].id，此种情况请使用 Function。',type:'Function(row)/String',options:"-",default:'-'},
                     {query:'page',desc:'分页',type:'object',options:"-",default:'{pageNum:1,pageSize:15,total:0}'},
+                    {query:'max',desc:'最多勾选多少个',type:'number',options:"-",default:'0'},
                 ],
                 list1:[
                     {query:'handle-buttons',desc:`
