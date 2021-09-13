@@ -1,5 +1,10 @@
 # 更新日志
 
+### 2021年9月13日
+
+- 组件 `xn-table` 新增 `row-key` 属性 [详情](/comps/table)
+- 组件 `xn-table` 新增 `reserve-selection` 属性 [详情](/comps/table)
+
 ### 2021年9月9日
 
 - 组件 `xn-table` 新增 `max` 属性，最多勾选多少个 [详情](/comps/table)
