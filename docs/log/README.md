@@ -1,5 +1,10 @@
 # 更新日志
 
+### 2021年9月16日
+
+- 组件 `xn-date` 新增 `defaultTime` 属性 [详情](/comps/date)
+- 组件 `xn-date` 新增 `isDisabledBefore` 属性 [详情](/comps/date)
+
 ### 2021年9月13日
 
 - 组件 `xn-table` 新增 `row-key` 属性 [详情](/comps/table)

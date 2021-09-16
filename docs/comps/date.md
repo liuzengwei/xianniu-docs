@@ -53,6 +53,8 @@
                     {query:'placeholder',desc:'文本占位',type:'string',options:'-',default:'-'},
                     {query:'start-placeholder',desc:'range类型的文本占位',type:'string',options:'-',default:'开始日期'},
                     {query:'end-placeholder',desc:'range类型的文本占位',type:'string',options:'-',default:'结束日期'},
+                    {query:'isDisabledBefore',desc:'是否开启禁用当天之前的日期',type:'boolean',options:'true/false',default:'false'},
+                    {query:'defaultTime',desc:'非范围选择时：形如12:00:00的字符串；范围选择时：数组，长度为 2，每项值为字符串，形如12:00:00，第一项指定开始日期的时刻，第二项指定结束日期的时刻。不指定会使用时刻 00:00:00	',type:'boolean',options:'非范围选择时：string / 范围选择时：string[]',default:'00:00:00'},
                 ],
                 list1:[
                     {query:'on-change',desc:'选择日期',type:'function',options:'-',default:'-'},
