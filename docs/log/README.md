@@ -2,9 +2,9 @@
 
 ### 2021年9月22日
 
-- 组件 `xn-search` 处理筛选时候 ’23:59:59‘ 的问题
+- 组件 `xn-search` 处理筛选时候 `23:59:59` 的问题
 - 组件 `xn-upload` 新增 `on-success` 自定义事件
-- 组件 `xn-upload` 新增 `preview` 属性，设置为 `true` 则为预览模式，与之前预览的属性 `disabled` 区分开，disabled只作为禁用的属性
+- 组件 `xn-upload` 新增 `preview` 属性，设置为 `true` 则为预览模式，与之前预览的属性 `disabled` 区分开，disabled只作为禁用的属性(对不起！)
 
 ### 2021年9月16日
 
