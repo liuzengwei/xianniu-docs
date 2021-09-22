@@ -1,5 +1,10 @@
 # 更新日志
 
+### 2021年9月22日
+
+- 组件 `xn-search` 处理筛选时候 ’23:59:59‘ 的问题
+- 组件 `xn-upload` 新增 `on-success` 自定义事件
+
 ### 2021年9月16日
 
 - 组件 `xn-date` 新增 `defaultTime` 属性 [详情](/comps/date)

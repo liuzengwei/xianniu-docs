@@ -33,6 +33,10 @@
 ---
 <api :list="list"></api>
 
+#### 事件
+---
+<api :list="list1"></api>
+
 <script>
    export default {
         data(){
@@ -46,6 +50,9 @@
                     {query:'tip',desc:'上传文件描述',type:'string',options:'-',default:'-'},
                     {query:'accept',desc:'允许上传的文件格式',type:'array',options:'-',default:'["jpg", "jpeg", "png", "pdf"]'},
                     {query:'compress',desc:'压缩(只支持图片压缩)，0~1：按百分比压缩，>1：按固定值压缩',type:'boolean,number',options:'0~1/>1',default:'false'}
+                ],
+                list1:[
+                    {query:'on-success',desc:'上传成功触发的自定义事件',type:'array',options:'-',default:'-'},
                 ]
             }
         }
