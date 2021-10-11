@@ -6,7 +6,7 @@ node 环境下执行`node build/build-auth.js`
 
 #### 1、自动注册权限文件
 
-在项目根目录创建 `build/build-auth.js`
+在项目根目录创建 `build/build-auth.js`，然后复制以下代码。
 
 ``` javascript
 /* 
@@ -17,6 +17,8 @@ node 环境下执行`node build/build-auth.js`
     4.生成代码模板
     5.写入到项目目录 config/auth.js
 */
+
+// 自动注册权限文件
 
 const config = {
     url: 'https://gatewaydev.xianniu.cn/auth/permissionGroup/findMenuDetail',
@@ -34,7 +36,7 @@ const settings = require('../src/settings.js')
 
 var OUTPUT_PATH = path.join(__dirname, '../config/auth.js');
 
-var AUTH_TEMPLATE = '\'auth{{index}}\':\'{{auth_code}}\', // {{docs}}';
+var AUTH_TEMPLATE = '\'auth{{menuId}}\':\'{{auth_code}}\', // {{docs}}';
 
 
 var MAIN_TEMPLATE = `
@@ -102,7 +104,6 @@ async function init() {
         if (data && data.length) {
             data.forEach(item => {
                 if (item.appCode === settings.appNo) {
-                    console.log(item.bossApplicationMenuVOS);
                     newArr = filterArr(item.bossApplicationMenuVOS)
                 }
             })
@@ -160,7 +161,7 @@ function createTemplate(arr = []) {
     }
     arr.forEach((item, index) => {
         const str = render(AUTH_TEMPLATE, {
-            index,
+            menuId:item.menuId,
             auth_code: item.permissionCode,
             docs: item.menuName
         })
