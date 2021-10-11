@@ -1,6 +1,12 @@
 # 脚本
 
+::: tip 提示
+node 环境下执行`node build/build-auth.js`
+:::
+
 #### 1、自动注册权限文件
+
+在项目根目录创建 `build/build-auth.js`
 
 ``` javascript
 /* 
