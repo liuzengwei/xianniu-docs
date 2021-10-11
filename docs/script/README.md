@@ -40,6 +40,7 @@ var MAIN_TEMPLATE = `
 /* appCode: {{auth_name}} */
 import Vue from 'vue'
 import store from '@/store'
+import { routerAuth } from '@/settings'
 const AUTH_CODE = {
     {{include}}
 }
@@ -52,7 +53,7 @@ const permission = (value = []) => {
         return item
       }
     })
-    if (id === 1) return true // === 1 管理员  都显示
+    if (id === 1 || !routerAuth) return true // === 1 管理员  都显示 或者是开发环境
     if (value) {
       let hasPermission = null
       const permissionRoles = value
@@ -192,6 +193,7 @@ node build/build-auth.js
 /* appCode: XTD */
 import Vue from 'vue'
 import store from '@/store'
+import { routerAuth } from '@/settings'
 const AUTH_CODE = {
   'auth0': 'xxx', // 对应的权限描述
 }
@@ -204,7 +206,7 @@ const permission = (value = []) => {
       return item
     }
   })
-  if (id === 1) return true // === 1 管理员  都显示
+  if (id === 1 || !routerAuth) return true // === 1 管理员  都显示 或者是开发环境
   if (value) {
     let hasPermission = null
     const permissionRoles = value
