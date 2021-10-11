@@ -106,7 +106,10 @@ module.exports = {
                     // { title: 'xn-tools', path: '/tools/tools' },
                 ]
             },
-
+            {
+                title: '脚本',
+                path: '/script/',
+            },
         ]
     }
 }
