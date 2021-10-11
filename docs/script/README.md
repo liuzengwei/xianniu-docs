@@ -11,7 +11,7 @@ node 环境下执行`node build/build-auth.js`
 ``` javascript
 /* 
     自动注册权限文件
-    1.根据 /auth/permissionGroup/findMenuDetail 拿到所有权限列表(需要token)
+    1.根据 /auth/permissionGroup/findMenuDetail 拿到所有权限列表(需要token，自行登录获取)
     2.然后根绝项目 setting.appNo 标识拿到对应的权限数组
     3.遍历数组，处理成想要的格式
     4.生成代码模板
