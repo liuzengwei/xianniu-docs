@@ -15,17 +15,14 @@ node 环境下执行`node build/build-auth.js`
     2.然后根绝项目 setting.appNo 标识拿到对应的权限数组
     3.遍历数组，处理成想要的格式
     4.生成代码模板
-    5.写入到项目目录 config/auth.js
+    5.写入到项目目录 src/config/auth.js
 */
-
-// 自动注册权限文件
 
 const config = {
     url: 'https://gatewaydev.xianniu.cn/auth/permissionGroup/findMenuDetail',
-    token: 'xxx'
+    token: '1390_6c949c4fc101cc6f70767d0f59654663'
 }
-
-
+const dir = './src/config'
 const request = require('request')
 const fs = require('fs')
 const qs = require('qs')
@@ -34,7 +31,7 @@ const path = require('path');
 const endOfLine = require('os').EOL;
 const settings = require('../src/settings.js')
 
-var OUTPUT_PATH = path.join(__dirname, '../config/auth.js');
+var OUTPUT_PATH = path.join(__dirname, '../src/config/auth.js');
 
 var AUTH_TEMPLATE = '\'auth{{menuId}}\':\'{{auth_code}}\', // {{docs}}';
 
@@ -110,7 +107,6 @@ async function init() {
         } else {
             newArr = []
         }
-        console.log(newArr);
         createTemplate(newArr)
     } else {
         console.log(`****** error code: ${code},msg: ${msg},打开【${OUTPUT_PATH}】更换有效token ******`);
@@ -172,11 +168,10 @@ function createTemplate(arr = []) {
         include: authArr.join(endOfLine)
     })
     // 写入的路径
-    const dir = './config'
     const isHas = fs.existsSync(dir)
     // 如果不存在 就先创建一个config文件夹
     if (!isHas) {
-        fs.mkdirSync('./config')
+        fs.mkdirSync(dir)
     }
     fs.writeFileSync(OUTPUT_PATH, template);
     console.log(`[build auth] success!`, OUTPUT_PATH);
