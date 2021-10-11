@@ -3,11 +3,18 @@
 #### 1、自动注册权限文件
 
 ``` javascript
-// 自动注册权限文件
+/* 
+    自动注册权限文件
+    1.根据 /auth/permissionGroup/findMenuDetail 拿到所有权限列表(需要token)
+    2.然后根绝项目 setting.appNo 标识拿到对应的权限数组
+    3.遍历数组，处理成想要的格式
+    4.生成代码模板
+    5.写入到项目目录 config/auth.js
+*/
 
 const config = {
     url: 'https://gatewaydev.xianniu.cn/auth/permissionGroup/findMenuDetail',
-    token: '1390_6c949c4fc101cc6f70767d0f59654663'
+    token: 'xxx'
 }
 
 
@@ -171,7 +178,57 @@ function createTemplate(arr = []) {
 init()
 ```
 
-执行命令
+执行以下命令
 ``` javascript
 node build/build-auth.js
+```
+
+以下为结果示例
+
+``` javascript
+
+/* appCode: XTD */
+import Vue from 'vue'
+import store from '@/store'
+const AUTH_CODE = {
+  'auth0': 'xxx', // 对应的权限描述
+}
+const permission = (value = []) => {
+  const { permissionList, id } = store.getters && store.getters.roles
+  value = value.map(item => {
+    if (AUTH_CODE[item]) {
+      return AUTH_CODE[item]
+    } else {
+      return item
+    }
+  })
+  if (id === 1) return true // === 1 管理员  都显示
+  if (value) {
+    let hasPermission = null
+    const permissionRoles = value
+    if (value instanceof Array) {
+      if (value.length > 0) {
+        // id === 0 有的不走权限
+        if (id === 0 && permissionRoles.includes(0)) {
+          return true
+        }
+        hasPermission = permissionList.some(role => {
+          return permissionRoles.includes(role)
+        })
+      }
+    } else {
+      hasPermission = permissionList.includes(permissionRoles)
+    }
+    if (!hasPermission) {
+      return false
+    }
+    return hasPermission
+  } else {
+    throw new Error(`需要填写权限，比如这样： v-permission="['admin','editor']"`)
+  }
+}
+
+Object.defineProperty(Vue.prototype, '$auth', { value: AUTH_CODE })
+Object.defineProperty(Vue.prototype, '$permission', { value: permission })
+export default AUTH_CODE
 ```
