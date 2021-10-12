@@ -38,51 +38,10 @@ var AUTH_TEMPLATE = '\'auth{{menuId}}\':\'{{auth_code}}\', // {{docs}}';
 
 var MAIN_TEMPLATE = `
 /* appCode: {{auth_name}} */
-import Vue from 'vue'
-import store from '@/store'
-import { routerAuth } from '@/settings'
 const AUTH_CODE = {
     {{include}}
 }
-const permission = (value = []) => {
-    const { permissionList, id } = store.getters && store.getters.roles
-    value = value.map(item => {
-      if (AUTH_CODE[item]) {
-        return AUTH_CODE[item]
-      } else {
-        return item
-      }
-    })
-    if (id === 1 || !routerAuth) return true // === 1 管理员  都显示 或者是开发环境
-    if (value) {
-      let hasPermission = null
-      const permissionRoles = value
-      if (value instanceof Array) {
-        if (value.length > 0) {
-          // id === 0 有的不走权限
-          if (id === 0 && permissionRoles.includes(0)) {
-            return true
-          }
-          hasPermission = permissionList.some(role => {
-            return permissionRoles.includes(role)
-          })
-        }
-      } else {
-        hasPermission = permissionList.includes(permissionRoles)
-      }
-      if (!hasPermission) {
-        return false
-      }
-      return hasPermission
-    } else {
-      throw new Error(\`需要填写权限，比如这样： v-permission="['admin','editor']"\`)
-    }
-  }
-  
-  Object.defineProperty(Vue.prototype, '$auth', { value: AUTH_CODE })
-  Object.defineProperty(Vue.prototype, '$permission', { value: permission })
-  export default AUTH_CODE
-    
+export default AUTH_CODE
 `
 
 // 遍历权限
@@ -191,48 +150,8 @@ node build/build-auth.js
 ``` javascript
 
 /* appCode: XTD */
-import Vue from 'vue'
-import store from '@/store'
-import { routerAuth } from '@/settings'
 const AUTH_CODE = {
   'auth0': 'xxx', // 对应的权限描述
 }
-const permission = (value = []) => {
-  const { permissionList, id } = store.getters && store.getters.roles
-  value = value.map(item => {
-    if (AUTH_CODE[item]) {
-      return AUTH_CODE[item]
-    } else {
-      return item
-    }
-  })
-  if (id === 1 || !routerAuth) return true // === 1 管理员  都显示 或者是开发环境
-  if (value) {
-    let hasPermission = null
-    const permissionRoles = value
-    if (value instanceof Array) {
-      if (value.length > 0) {
-        // id === 0 有的不走权限
-        if (id === 0 && permissionRoles.includes(0)) {
-          return true
-        }
-        hasPermission = permissionList.some(role => {
-          return permissionRoles.includes(role)
-        })
-      }
-    } else {
-      hasPermission = permissionList.includes(permissionRoles)
-    }
-    if (!hasPermission) {
-      return false
-    }
-    return hasPermission
-  } else {
-    throw new Error(`需要填写权限，比如这样： v-permission="['admin','editor']"`)
-  }
-}
-
-Object.defineProperty(Vue.prototype, '$auth', { value: AUTH_CODE })
-Object.defineProperty(Vue.prototype, '$permission', { value: permission })
 export default AUTH_CODE
 ```
