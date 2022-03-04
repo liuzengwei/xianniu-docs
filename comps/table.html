@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>xn-table | 贤牛</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="shortcut icon" type="image/x-icon" href="/xianniu-docs/jyjwebdocs/favicon.ico">
+    <meta name="description" content="贤牛后台管理文档">
+    
+    <link rel="preload" href="/xianniu-docs/assets/css/0.styles.89152bc9.css" as="style"><link rel="preload" href="/xianniu-docs/assets/js/app.7f66fb51.js" as="script"><link rel="preload" href="/xianniu-docs/assets/js/2.eba899f3.js" as="script"><link rel="preload" href="/xianniu-docs/assets/js/17.0403f875.js" as="script"><link rel="preload" href="/xianniu-docs/assets/js/3.fa775639.js" as="script"><link rel="prefetch" href="/xianniu-docs/assets/js/10.5c46fc71.js"><link rel="prefetch" href="/xianniu-docs/assets/js/11.c6bc07ad.js"><link rel="prefetch" href="/xianniu-docs/assets/js/12.5c755d3c.js"><link rel="prefetch" href="/xianniu-docs/assets/js/13.55b7871c.js"><link rel="prefetch" href="/xianniu-docs/assets/js/14.5028e859.js"><link rel="prefetch" href="/xianniu-docs/assets/js/15.84486495.js"><link rel="prefetch" href="/xianniu-docs/assets/js/16.ba8c51bf.js"><link rel="prefetch" href="/xianniu-docs/assets/js/18.162d3613.js"><link rel="prefetch" href="/xianniu-docs/assets/js/19.75807cda.js"><link rel="prefetch" href="/xianniu-docs/assets/js/20.935b10f9.js"><link rel="prefetch" href="/xianniu-docs/assets/js/21.c9c9484d.js"><link rel="prefetch" href="/xianniu-docs/assets/js/22.f3335a49.js"><link rel="prefetch" href="/xianniu-docs/assets/js/23.4f552008.js"><link rel="prefetch" href="/xianniu-docs/assets/js/24.4fa90091.js"><link rel="prefetch" href="/xianniu-docs/assets/js/25.2e735005.js"><link rel="prefetch" href="/xianniu-docs/assets/js/4.acd2f1c9.js"><link rel="prefetch" href="/xianniu-docs/assets/js/5.53ef3b12.js"><link rel="prefetch" href="/xianniu-docs/assets/js/6.f94a79ec.js"><link rel="prefetch" href="/xianniu-docs/assets/js/7.7c2090ff.js"><link rel="prefetch" href="/xianniu-docs/assets/js/8.0d85ead7.js"><link rel="prefetch" href="/xianniu-docs/assets/js/9.aac189cf.js">
+    <link rel="stylesheet" href="/xianniu-docs/assets/css/0.styles.89152bc9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/xianniu-docs/" class="home-link router-link-active"><!----> <span class="site-name">贤牛</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/xianniu-docs/log/" class="sidebar-link">更新日志</a></li><li><a href="/xianniu-docs/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/xianniu-docs/cli/" class="sidebar-link">脚手架</a></li><li><a href="/xianniu-docs/theme/" class="sidebar-link">主题</a></li><li><a href="/xianniu-docs/render/" class="sidebar-link">Render</a></li><li><section class="sidebar-group depth-0"><a href="/xianniu-docs/comps/" class="sidebar-heading clickable router-link-active open"><span>组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/xianniu-docs/comps/table.html" aria-current="page" class="active sidebar-link">xn-table</a></li><li><a href="/xianniu-docs/comps/date.html" class="sidebar-link">xn-date</a></li><li><a href="/xianniu-docs/comps/search.html" class="sidebar-link">xn-search</a></li><li><a href="/xianniu-docs/comps/dialog.html" class="sidebar-link">xn-dialog</a></li><li><a href="/xianniu-docs/comps/drawer.html" class="sidebar-link">xn-drawer</a></li><li><a href="/xianniu-docs/comps/desc.html" class="sidebar-link">xn-description</a></li><li><a href="/xianniu-docs/comps/upload.html" class="sidebar-link">xn-upload</a></li></ul></section></li><li><a href="/xianniu-docs/request/" class="sidebar-link">请求</a></li><li><a href="/xianniu-docs/tools/" class="sidebar-link">工具类</a></li><li><a href="/xianniu-docs/script/" class="sidebar-link">脚本</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="xn-table"><a href="#xn-table" class="header-anchor">#</a> xn-table</h1> <p>对表格<a href="https://element.eleme.cn/#/zh-CN/component/table" target="_blank" rel="noopener noreferrer">Element-Table<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>二次封装，目前只支持部分特性，后续会按需支持。</p> <p>默认支持了最大高度，并且增加了<code>v-auto-height</code>指令，以便更好的适配不同的窗口大小。</p> <div class="language-html javascript extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>xn-table</span>
+        <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>list<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">index</span>
+        <span class="token attr-name">selection</span>
+        <span class="token attr-name">:columns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>headerColumns<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:auto-height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">@handle-buttons</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onMore<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">@on-selection</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onSelection<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:page</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>pageQuery<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- 预留插槽 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#tools</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+        ...
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>xn-table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+        <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">{</span>
+                headerColumns<span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span> 
+                        prop<span class="token operator">:</span> <span class="token string">'id'</span><span class="token punctuation">,</span> 
+                        label<span class="token operator">:</span> <span class="token string">'字段1'</span><span class="token punctuation">,</span> 
+                        show<span class="token operator">:</span><span class="token boolean">false</span> <span class="token comment">// 显示隐藏列 or show:()=&gt;false</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span> 
+                        label<span class="token operator">:</span> <span class="token string">'操作'</span><span class="token punctuation">,</span> 
+                        fixed<span class="token operator">:</span> <span class="token string">'right'</span><span class="token punctuation">,</span> 
+                        width<span class="token operator">:</span> <span class="token string">'150px,'</span><span class="token punctuation">,</span> 
+                        more<span class="token operator">:</span> <span class="token punctuation">{</span>
+                            options<span class="token operator">:</span> <span class="token punctuation">[</span>
+                                <span class="token punctuation">{</span>
+                                    label<span class="token operator">:</span> <span class="token string">'按钮1'</span><span class="token punctuation">,</span>
+                                    method<span class="token operator">:</span> <span class="token string">'handleClick1'</span><span class="token punctuation">,</span>
+                                    icon<span class="token operator">:</span> <span class="token string">'el-icon-delete'</span><span class="token punctuation">,</span>
+                                    <span class="token function-variable function">show</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token parameter">row</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+                                        <span class="token keyword">return</span> <span class="token boolean">true</span> <span class="token comment">// false or xxx</span>
+                                    <span class="token punctuation">}</span>
+                                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                <span class="token punctuation">{</span> 
+                                    <span class="token comment">// label: '按钮1', </span>
+                                    <span class="token comment">// method: 'handleClick1', </span>
+                                    <span class="token comment">// icon: 'el-icon-delete',</span>
+                                    <span class="token function-variable function">render</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">h<span class="token punctuation">,</span> <span class="token punctuation">{</span>row<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                                        <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'el-button'</span><span class="token punctuation">,</span>
+                                                <span class="token punctuation">{</span>  
+                                                    <span class="token keyword">class</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'class-1'</span><span class="token punctuation">,</span><span class="token string">'class-2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// or { 'class-1': true,'class-2': false }</span>
+                                                    style<span class="token operator">:</span> <span class="token punctuation">{</span>
+                                                        color<span class="token operator">:</span> <span class="token string">'red'</span><span class="token punctuation">,</span>
+                                                        fontSize<span class="token operator">:</span> <span class="token string">'14px'</span>
+                                                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                                    <span class="token comment">// 此处是组件的属性</span>
+                                                    props<span class="token operator">:</span> <span class="token punctuation">{</span>
+                                                        type<span class="token operator">:</span> <span class="token string">'danger'</span><span class="token punctuation">,</span>
+                                                        disabled<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                                                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                                    <span class="token comment">// 组件自定义事件</span>
+                                                    on<span class="token operator">:</span> <span class="token punctuation">{</span>
+                                                        click<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">clickHandler</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span><span class="token punctuation">,</span>
+                                                        change<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">clickHandler</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+                                                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                                    <span class="token comment">// js 原生事件</span>
+                                                    nativeOn<span class="token operator">:</span> <span class="token punctuation">{</span>
+                                                        click<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">nativeClickHandler</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+                                                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                                    <span class="token comment">// 自定义指令</span>
+                                                    directives<span class="token operator">:</span> <span class="token punctuation">[</span>
+                                                        <span class="token punctuation">{</span>
+                                                            name<span class="token operator">:</span> <span class="token string">'my-custom-directive'</span><span class="token punctuation">,</span>
+                                                            value<span class="token operator">:</span> <span class="token string">'2'</span><span class="token punctuation">,</span>
+                                                            expression<span class="token operator">:</span> <span class="token string">'1 + 1'</span><span class="token punctuation">,</span>
+                                                            arg<span class="token operator">:</span> <span class="token string">'foo'</span><span class="token punctuation">,</span>
+                                                            modifiers<span class="token operator">:</span> <span class="token punctuation">{</span>
+                                                                bar<span class="token operator">:</span> <span class="token boolean">true</span>
+                                                            <span class="token punctuation">}</span>
+                                                        <span class="token punctuation">}</span>
+                                                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                                                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                                <span class="token string">'按钮'</span>
+                                        <span class="token punctuation">)</span>
+                                    <span class="token punctuation">}</span>
+                                <span class="token punctuation">}</span>
+                            <span class="token punctuation">]</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        methods<span class="token operator">:</span><span class="token punctuation">{</span>
+            <span class="token function">onMore</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>method<span class="token punctuation">,</span>row<span class="token punctuation">,</span>idx<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>默认采用render写法，也可以通过<code>slot</code>常规写法</p> <h4 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h4> <p><div><el-table data="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" hover="" stripe=""><el-table-column label="参数"></el-table-column> <el-table-column label="说明"></el-table-column> <el-table-column label="类型"></el-table-column> <el-table-column label="可选值"></el-table-column> <el-table-column label="默认值"></el-table-column></el-table></div></p> <h4 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h4> <p><div><el-table data="[object Object],[object Object]" hover="" stripe=""><el-table-column label="参数"></el-table-column> <el-table-column label="说明"></el-table-column> <el-table-column label="类型"></el-table-column> <el-table-column label="可选值"></el-table-column> <el-table-column label="默认值"></el-table-column></el-table></div></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/xianniu-docs/render/" class="prev">
+        Render
+      </a></span> <span class="next"><a href="/xianniu-docs/comps/date.html">
+        xn-date
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/xianniu-docs/assets/js/app.7f66fb51.js" defer></script><script src="/xianniu-docs/assets/js/2.eba899f3.js" defer></script><script src="/xianniu-docs/assets/js/17.0403f875.js" defer></script><script src="/xianniu-docs/assets/js/3.fa775639.js" defer></script>
+  </body>
+</html>

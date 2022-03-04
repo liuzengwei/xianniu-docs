@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>脚本 | 贤牛</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="shortcut icon" type="image/x-icon" href="/xianniu-docs/jyjwebdocs/favicon.ico">
+    <meta name="description" content="贤牛后台管理文档">
+    
+    <link rel="preload" href="/xianniu-docs/assets/css/0.styles.89152bc9.css" as="style"><link rel="preload" href="/xianniu-docs/assets/js/app.7f66fb51.js" as="script"><link rel="preload" href="/xianniu-docs/assets/js/2.eba899f3.js" as="script"><link rel="preload" href="/xianniu-docs/assets/js/22.f3335a49.js" as="script"><link rel="prefetch" href="/xianniu-docs/assets/js/10.5c46fc71.js"><link rel="prefetch" href="/xianniu-docs/assets/js/11.c6bc07ad.js"><link rel="prefetch" href="/xianniu-docs/assets/js/12.5c755d3c.js"><link rel="prefetch" href="/xianniu-docs/assets/js/13.55b7871c.js"><link rel="prefetch" href="/xianniu-docs/assets/js/14.5028e859.js"><link rel="prefetch" href="/xianniu-docs/assets/js/15.84486495.js"><link rel="prefetch" href="/xianniu-docs/assets/js/16.ba8c51bf.js"><link rel="prefetch" href="/xianniu-docs/assets/js/17.0403f875.js"><link rel="prefetch" href="/xianniu-docs/assets/js/18.162d3613.js"><link rel="prefetch" href="/xianniu-docs/assets/js/19.75807cda.js"><link rel="prefetch" href="/xianniu-docs/assets/js/20.935b10f9.js"><link rel="prefetch" href="/xianniu-docs/assets/js/21.c9c9484d.js"><link rel="prefetch" href="/xianniu-docs/assets/js/23.4f552008.js"><link rel="prefetch" href="/xianniu-docs/assets/js/24.4fa90091.js"><link rel="prefetch" href="/xianniu-docs/assets/js/25.2e735005.js"><link rel="prefetch" href="/xianniu-docs/assets/js/3.fa775639.js"><link rel="prefetch" href="/xianniu-docs/assets/js/4.acd2f1c9.js"><link rel="prefetch" href="/xianniu-docs/assets/js/5.53ef3b12.js"><link rel="prefetch" href="/xianniu-docs/assets/js/6.f94a79ec.js"><link rel="prefetch" href="/xianniu-docs/assets/js/7.7c2090ff.js"><link rel="prefetch" href="/xianniu-docs/assets/js/8.0d85ead7.js"><link rel="prefetch" href="/xianniu-docs/assets/js/9.aac189cf.js">
+    <link rel="stylesheet" href="/xianniu-docs/assets/css/0.styles.89152bc9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/xianniu-docs/" class="home-link router-link-active"><!----> <span class="site-name">贤牛</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/xianniu-docs/log/" class="sidebar-link">更新日志</a></li><li><a href="/xianniu-docs/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/xianniu-docs/cli/" class="sidebar-link">脚手架</a></li><li><a href="/xianniu-docs/theme/" class="sidebar-link">主题</a></li><li><a href="/xianniu-docs/render/" class="sidebar-link">Render</a></li><li><section class="sidebar-group depth-0"><a href="/xianniu-docs/comps/" class="sidebar-heading clickable"><span>组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/xianniu-docs/comps/table.html" class="sidebar-link">xn-table</a></li><li><a href="/xianniu-docs/comps/date.html" class="sidebar-link">xn-date</a></li><li><a href="/xianniu-docs/comps/search.html" class="sidebar-link">xn-search</a></li><li><a href="/xianniu-docs/comps/dialog.html" class="sidebar-link">xn-dialog</a></li><li><a href="/xianniu-docs/comps/drawer.html" class="sidebar-link">xn-drawer</a></li><li><a href="/xianniu-docs/comps/desc.html" class="sidebar-link">xn-description</a></li><li><a href="/xianniu-docs/comps/upload.html" class="sidebar-link">xn-upload</a></li></ul></section></li><li><a href="/xianniu-docs/request/" class="sidebar-link">请求</a></li><li><a href="/xianniu-docs/tools/" class="sidebar-link">工具类</a></li><li><a href="/xianniu-docs/script/" aria-current="page" class="active sidebar-link">脚本</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="脚本"><a href="#脚本" class="header-anchor">#</a> 脚本</h1> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>node 环境下执行<code>node build/build-auth.js</code></p></div> <h4 id="自动注册权限文件"><a href="#自动注册权限文件" class="header-anchor">#</a> 自动注册权限文件</h4> <p>在项目根目录创建 <code>build/build-auth.js</code>，然后复制以下代码。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/* 
+    自动注册权限文件
+    1.根据 /auth/permissionGroup/findMenuDetail 拿到所有权限列表(需要token，自行登录获取)
+    2.然后根绝项目 setting.appNo 标识拿到对应的权限数组
+    3.遍历数组，处理成想要的格式
+    4.生成代码模板
+    5.写入到项目目录 src/config/auth.js
+*/</span>
+
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+    url<span class="token operator">:</span> <span class="token string">'https://gatewaydev.xianniu.cn/auth/permissionGroup/findMenuDetail'</span><span class="token punctuation">,</span>
+    token<span class="token operator">:</span> <span class="token string">'1390_6c949c4fc101cc6f70767d0f59654663'</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> dir <span class="token operator">=</span> <span class="token string">'./src/config'</span>
+<span class="token keyword">const</span> request <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'request'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> qs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'qs'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> render <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'json-templater/string'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> endOfLine <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'os'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token constant">EOL</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> settings <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../src/settings.js'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> <span class="token constant">OUTPUT_PATH</span> <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'../src/config/auth.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> <span class="token constant">AUTH_TEMPLATE</span> <span class="token operator">=</span> <span class="token string">'\'auth{{menuId}}\':\'{{auth_code}}\', // {{docs}}'</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">var</span> <span class="token constant">MAIN_TEMPLATE</span> <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+/* appCode: {{auth_name}} */
+const AUTH_CODE = {
+    {{include}}
+}
+export default AUTH_CODE
+</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token comment">// 遍历权限</span>
+
+<span class="token keyword">var</span> authArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> code<span class="token punctuation">,</span> data<span class="token punctuation">,</span> msg <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        url<span class="token operator">:</span> config<span class="token punctuation">.</span>url<span class="token punctuation">,</span>
+        token<span class="token operator">:</span> config<span class="token punctuation">.</span>token<span class="token punctuation">,</span>
+        data<span class="token operator">:</span> <span class="token punctuation">{</span>
+            appNo<span class="token operator">:</span> settings<span class="token punctuation">.</span>appNo
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>code <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// // console.log(data);</span>
+        <span class="token keyword">let</span> newArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>data <span class="token operator">&amp;&amp;</span> data<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            data<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>item<span class="token punctuation">.</span>appCode <span class="token operator">===</span> settings<span class="token punctuation">.</span>appNo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    newArr <span class="token operator">=</span> <span class="token function">filterArr</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>bossApplicationMenuVOS<span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            newArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">createTemplate</span><span class="token punctuation">(</span>newArr<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">****** error code: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>code<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,msg: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>msg<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,打开【</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">OUTPUT_PATH</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">】更换有效token ******</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 封装一个请求</span>
+<span class="token keyword">function</span> <span class="token function">ajax</span><span class="token punctuation">(</span><span class="token parameter">obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res<span class="token punctuation">,</span> rej</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            url<span class="token operator">:</span> obj<span class="token punctuation">.</span>url<span class="token punctuation">,</span>
+            method<span class="token operator">:</span> <span class="token string">&quot;POST&quot;</span><span class="token punctuation">,</span>
+            json<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token string">&quot;content-type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/x-www-form-urlencoded&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">'xnToken'</span><span class="token operator">:</span> obj<span class="token punctuation">.</span>token
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            body<span class="token operator">:</span> qs<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>data <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">error<span class="token punctuation">,</span> response<span class="token punctuation">,</span> body</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">rej</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token function">res</span><span class="token punctuation">(</span>body<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 递归一下 获取appcode匹配的一维数组</span>
+<span class="token keyword">function</span> <span class="token function">filterArr</span><span class="token punctuation">(</span><span class="token parameter">arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> newArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">const</span> <span class="token function-variable function">fn</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            newArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span> menuId<span class="token operator">:</span> item<span class="token punctuation">.</span>menuId<span class="token punctuation">,</span> menuName<span class="token operator">:</span> item<span class="token punctuation">.</span>menuName<span class="token punctuation">,</span> permissionCode<span class="token operator">:</span> item<span class="token punctuation">.</span>permissionCode<span class="token punctuation">,</span> appCode<span class="token operator">:</span> item<span class="token punctuation">.</span>appCode <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>item<span class="token punctuation">.</span>bossApplicationMenuVOS <span class="token operator">&amp;&amp;</span> item<span class="token punctuation">.</span>bossApplicationMenuVOS<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">fn</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>bossApplicationMenuVOS<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">fn</span><span class="token punctuation">(</span>arr1<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> newArr
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 生成模板</span>
+<span class="token keyword">function</span> <span class="token function">createTemplate</span><span class="token punctuation">(</span><span class="token parameter">arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'**********************'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'******权限组为空******'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'**********************'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> str <span class="token operator">=</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token constant">AUTH_TEMPLATE</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            menuId<span class="token operator">:</span>item<span class="token punctuation">.</span>menuId<span class="token punctuation">,</span>
+            auth_code<span class="token operator">:</span> item<span class="token punctuation">.</span>permissionCode<span class="token punctuation">,</span>
+            docs<span class="token operator">:</span> item<span class="token punctuation">.</span>menuName
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        authArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">var</span> template <span class="token operator">=</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token constant">MAIN_TEMPLATE</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        auth_name<span class="token operator">:</span> settings<span class="token punctuation">.</span>appNo<span class="token punctuation">,</span>
+        include<span class="token operator">:</span> authArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>endOfLine<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// 写入的路径</span>
+    <span class="token keyword">const</span> isHas <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">existsSync</span><span class="token punctuation">(</span>dir<span class="token punctuation">)</span>
+    <span class="token comment">// 如果不存在 就先创建一个config文件夹</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isHas<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        fs<span class="token punctuation">.</span><span class="token function">mkdirSync</span><span class="token punctuation">(</span>dir<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    fs<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span><span class="token constant">OUTPUT_PATH</span><span class="token punctuation">,</span> template<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">[build auth] success!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token constant">OUTPUT_PATH</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 调用</span>
+<span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>执行以下命令</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>node build<span class="token operator">/</span>build<span class="token operator">-</span>auth<span class="token punctuation">.</span>js
+</code></pre></div><p>以下为结果示例</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token comment">/* appCode: XTD */</span>
+<span class="token keyword">const</span> <span class="token constant">AUTH_CODE</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">'auth0'</span><span class="token operator">:</span> <span class="token string">'xxx'</span><span class="token punctuation">,</span> <span class="token comment">// 对应的权限描述</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token constant">AUTH_CODE</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/xianniu-docs/tools/" class="prev">
+        工具类
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/xianniu-docs/assets/js/app.7f66fb51.js" defer></script><script src="/xianniu-docs/assets/js/2.eba899f3.js" defer></script><script src="/xianniu-docs/assets/js/22.f3335a49.js" defer></script>
+  </body>
+</html>

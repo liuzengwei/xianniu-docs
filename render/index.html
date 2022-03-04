@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>render 的基本用法 | 贤牛</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="shortcut icon" type="image/x-icon" href="/xianniu-docs/jyjwebdocs/favicon.ico">
+    <meta name="description" content="贤牛后台管理文档">
+    
+    <link rel="preload" href="/xianniu-docs/assets/css/0.styles.89152bc9.css" as="style"><link rel="preload" href="/xianniu-docs/assets/js/app.7f66fb51.js" as="script"><link rel="preload" href="/xianniu-docs/assets/js/2.eba899f3.js" as="script"><link rel="preload" href="/xianniu-docs/assets/js/20.935b10f9.js" as="script"><link rel="prefetch" href="/xianniu-docs/assets/js/10.5c46fc71.js"><link rel="prefetch" href="/xianniu-docs/assets/js/11.c6bc07ad.js"><link rel="prefetch" href="/xianniu-docs/assets/js/12.5c755d3c.js"><link rel="prefetch" href="/xianniu-docs/assets/js/13.55b7871c.js"><link rel="prefetch" href="/xianniu-docs/assets/js/14.5028e859.js"><link rel="prefetch" href="/xianniu-docs/assets/js/15.84486495.js"><link rel="prefetch" href="/xianniu-docs/assets/js/16.ba8c51bf.js"><link rel="prefetch" href="/xianniu-docs/assets/js/17.0403f875.js"><link rel="prefetch" href="/xianniu-docs/assets/js/18.162d3613.js"><link rel="prefetch" href="/xianniu-docs/assets/js/19.75807cda.js"><link rel="prefetch" href="/xianniu-docs/assets/js/21.c9c9484d.js"><link rel="prefetch" href="/xianniu-docs/assets/js/22.f3335a49.js"><link rel="prefetch" href="/xianniu-docs/assets/js/23.4f552008.js"><link rel="prefetch" href="/xianniu-docs/assets/js/24.4fa90091.js"><link rel="prefetch" href="/xianniu-docs/assets/js/25.2e735005.js"><link rel="prefetch" href="/xianniu-docs/assets/js/3.fa775639.js"><link rel="prefetch" href="/xianniu-docs/assets/js/4.acd2f1c9.js"><link rel="prefetch" href="/xianniu-docs/assets/js/5.53ef3b12.js"><link rel="prefetch" href="/xianniu-docs/assets/js/6.f94a79ec.js"><link rel="prefetch" href="/xianniu-docs/assets/js/7.7c2090ff.js"><link rel="prefetch" href="/xianniu-docs/assets/js/8.0d85ead7.js"><link rel="prefetch" href="/xianniu-docs/assets/js/9.aac189cf.js">
+    <link rel="stylesheet" href="/xianniu-docs/assets/css/0.styles.89152bc9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/xianniu-docs/" class="home-link router-link-active"><!----> <span class="site-name">贤牛</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/xianniu-docs/log/" class="sidebar-link">更新日志</a></li><li><a href="/xianniu-docs/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/xianniu-docs/cli/" class="sidebar-link">脚手架</a></li><li><a href="/xianniu-docs/theme/" class="sidebar-link">主题</a></li><li><a href="/xianniu-docs/render/" aria-current="page" class="active sidebar-link">Render</a></li><li><section class="sidebar-group depth-0"><a href="/xianniu-docs/comps/" class="sidebar-heading clickable"><span>组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/xianniu-docs/comps/table.html" class="sidebar-link">xn-table</a></li><li><a href="/xianniu-docs/comps/date.html" class="sidebar-link">xn-date</a></li><li><a href="/xianniu-docs/comps/search.html" class="sidebar-link">xn-search</a></li><li><a href="/xianniu-docs/comps/dialog.html" class="sidebar-link">xn-dialog</a></li><li><a href="/xianniu-docs/comps/drawer.html" class="sidebar-link">xn-drawer</a></li><li><a href="/xianniu-docs/comps/desc.html" class="sidebar-link">xn-description</a></li><li><a href="/xianniu-docs/comps/upload.html" class="sidebar-link">xn-upload</a></li></ul></section></li><li><a href="/xianniu-docs/request/" class="sidebar-link">请求</a></li><li><a href="/xianniu-docs/tools/" class="sidebar-link">工具类</a></li><li><a href="/xianniu-docs/script/" class="sidebar-link">脚本</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="render-的基本用法"><a href="#render-的基本用法" class="header-anchor">#</a> render 的基本用法</h1> <div class="custom-block warning"><p class="custom-block-title">提醒</p> <p>render 可以满足复杂dom渲染，但也只是一种编码方式，与传统模式并无区别，实际开发中为了高效，可以以自己习惯来写!</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>xn-table</span><span class="token punctuation">&gt;</span></span>
+   <span class="token comment">&lt;!--...此处是插槽--&gt;</span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-colunm</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>xn-table</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function-variable function">render</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">h<span class="token punctuation">,</span> <span class="token punctuation">{</span>row<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'此处为渲染的dom,例：span'</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token operator">...</span>props<span class="token punctuation">}</span><span class="token punctuation">,</span> row<span class="token punctuation">.</span>xxx<span class="token punctuation">)</span>
+    <span class="token comment">// 还有更多写法，用到时候再补充</span>
+    <span class="token comment">// render h([...])</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以下是上方的<code>props</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token comment">// 和`v-bind:class`一样的 API</span>
+  <span class="token string">'class'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    foo<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    bar<span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 和`v-bind:style`一样的 API</span>
+  style<span class="token operator">:</span> <span class="token punctuation">{</span>
+    color<span class="token operator">:</span> <span class="token string">'red'</span><span class="token punctuation">,</span>
+    fontSize<span class="token operator">:</span> <span class="token string">'14px'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 正常的 HTML 特性</span>
+  attrs<span class="token operator">:</span> <span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token string">'foo'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 组件 props</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    myProp<span class="token operator">:</span> <span class="token string">'bar'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// DOM 属性</span>
+  domProps<span class="token operator">:</span> <span class="token punctuation">{</span>
+    innerHTML<span class="token operator">:</span> <span class="token string">'baz'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 事件监听器基于 `on`</span>
+  <span class="token comment">// 所以不再支持如 `v-on:keyup.enter` 修饰器</span>
+  <span class="token comment">// 需要手动匹配 keyCode。</span>
+  on<span class="token operator">:</span> <span class="token punctuation">{</span>
+    click<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>clickHandler
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 仅对于组件，用于监听原生事件，而不是组件内部使用 `vm.$emit` 触发的事件。</span>
+  nativeOn<span class="token operator">:</span> <span class="token punctuation">{</span>
+    click<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>nativeClickHandler
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 自定义指令。注意，您无法对绑定中的 `oldValue` 赋值</span>
+  <span class="token comment">// Vue 会为您持续追踪</span>
+  directives<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      name<span class="token operator">:</span> <span class="token string">'my-custom-directive'</span><span class="token punctuation">,</span>
+      value<span class="token operator">:</span> <span class="token string">'2'</span><span class="token punctuation">,</span>
+      expression<span class="token operator">:</span> <span class="token string">'1 + 1'</span><span class="token punctuation">,</span>
+      arg<span class="token operator">:</span> <span class="token string">'foo'</span><span class="token punctuation">,</span>
+      modifiers<span class="token operator">:</span> <span class="token punctuation">{</span>
+        bar<span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// Scoped slots in the form of</span>
+  <span class="token comment">// { name: props =&gt; VNode | Array&lt;VNode&gt; }</span>
+  scopedSlots<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">default</span><span class="token operator">:</span> <span class="token parameter">props</span> <span class="token operator">=&gt;</span> <span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'span'</span><span class="token punctuation">,</span> props<span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 如果组件是其他组件的子组件，需为插槽指定名称</span>
+  slot<span class="token operator">:</span> <span class="token string">'name-of-slot'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 其他特殊顶层属性</span>
+  key<span class="token operator">:</span> <span class="token string">'myKey'</span><span class="token punctuation">,</span>
+  ref<span class="token operator">:</span> <span class="token string">'myRef'</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/xianniu-docs/theme/" class="prev">
+        主题
+      </a></span> <span class="next"><a href="/xianniu-docs/comps/table.html">
+        xn-table
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/xianniu-docs/assets/js/app.7f66fb51.js" defer></script><script src="/xianniu-docs/assets/js/2.eba899f3.js" defer></script><script src="/xianniu-docs/assets/js/20.935b10f9.js" defer></script>
+  </body>
+</html>
